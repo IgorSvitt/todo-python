@@ -1,0 +1,12 @@
+services:
+  todo_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8800:80"
+    volumes:
+      - data:/app/data
+
+volumes:
+  data:
